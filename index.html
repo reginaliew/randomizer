@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Randomizer</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- <link rel="stylesheet" href="./node_modules/nes.css/css/nes.min.css"> -->
+        <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="background">&nbsp;</div>
+            <div class="filter">&nbsp;</div>
+            <div class="container">
+                <div class="header">
+                    <div class="title">Randomizer</div>
+                    <div class="description">Enter your choices...</div>
+                    <div class="row">
+                        <div class="col col-100">
+                            <div class="nes-field">
+                                <input type="text" name="choice" class="nes-input is-dark input-val">
+                            </div>
+                        </div>
+                        <div class="col col-sm">
+                            <button type="button" id="add" class="nes-btn is-error add-btn">Add</button>
+                        </div>
+                        <div class="col col-lg">
+                            <button type="button" id="start" class="nes-btn is-success start-btn">Start</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="body">
+                    <div class="block"></div>
+                    <div class="randomize"></div>
+                </div>
+                <div class="footer">
+    
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <!-- <button type="button" class="nes-btn is-primary" onclick="document.getElementById('dialog-dark-rounded').showModal();">
+              Open dark and rounded dialog
+            </button> -->
+            <dialog class="nes-dialog is-dark is-rounded" id="dialog-empty-input">
+              <form method="dialog">
+                <p class="title nes-text is-warning" style="padding-top: 10px;">Empty Input</p>
+                <!-- <p style="padding-left: 10px;">Please fill in the previous input before adding new choice.</p> -->
+                <menu class="dialog-menu" style="padding: 10px 0px 0px 0px;text-align: center;">
+                  <!-- <button class="nes-btn">Cancel</button> -->
+                  <button class="nes-btn is-warning">Ok</button>
+                </menu>
+              </form>
+            </dialog>
+        </section>
+
+        <!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
